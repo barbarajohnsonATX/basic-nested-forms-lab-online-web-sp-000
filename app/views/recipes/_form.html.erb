@@ -6,19 +6,8 @@
   <%= ingr.quantity :quantity_1 %><br>
     
     
-<% end %>
+  <% end %>
 
-<%= form_for @person do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %><br>
- 
-  <%= f.fields_for :addresses do |addr| %>
-    <%= addr.label :street_address_1 %>
-    <%= addr.text_field :street_address_1 %><br>
- 
-    <%= addr.label :street_address_2 %>
-    <%= addr.text_field :street_address_2 %><br>
- 
  
   
  

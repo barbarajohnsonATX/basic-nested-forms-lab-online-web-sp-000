@@ -2,8 +2,8 @@
   Title: <%= f.text_field :title %>
   
   <%= f.fields_for :ingredients do |ingr| %>
-    <%= ingr.name :name_1 %>
-    <%= ingr.quantity :quantity_1 %><br>
+    <%= ingr.name :name %>
+    <%= ingr.quantity :quantity %><br>
   <% end %>
  
   <%= f.submit %>

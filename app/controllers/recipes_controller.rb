@@ -8,7 +8,8 @@ class RecipesController < ApplicationController
   end
 
   def new
-    #when we create recipe, add two empty ingred. 
+    # when we create recipe, add two empty ingredients 
+    # to fill out
     @recipe = Recipe.new
     @recipe.ingredients.build()
     @recipe.ingredients.build()

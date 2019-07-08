@@ -8,6 +8,7 @@ class RecipesController < ApplicationController
   end
 
   def new
+    #when we create recipe, add two ingred. 
     @recipe = Recipe.new
     @recipe.ingredients.build()
     @recipe.ingredients.build()

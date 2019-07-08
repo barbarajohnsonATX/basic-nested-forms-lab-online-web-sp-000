@@ -1,8 +1,10 @@
 class Recipe < ActiveRecord::Base
   has_many :ingredients 
 
+  #recipe accepts two indgredients
   def ingredients_attributes=(ingredients_attributes)
-    self.ingredients = Recipe.find_or_create_by(name: ingredient[:name])
-    self.ingredients.update(ingredient)
+    ingredients_attributes.each do |i, ingredient_attributes|
+      self.ingredients.build(ingredient_attributes)
+    end
   end
 end
